@@ -1,15 +1,11 @@
 body{
-    background-color: #B0E37C;
+    background-color: #D3EEB8;
     font-family: 'Bricolage Grotesque', sans-serif;
 
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.child{
-    font-size: 48px;
+.header_message{
+    background-color: #B0E37C;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
