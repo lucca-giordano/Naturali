@@ -4,8 +4,25 @@ body{
 
 }
 
-.header_message{
-    background-color: #B0E37C;
+.header-message{
+    background-color: #50B96F;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    padding-bottom: 1px;
+}
+
+.header-content{
+    padding: 15px;
+    display: flex;
+}
+
+.header-message p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 1px;
+}
+
+.header-search img{
+    height: 40px;
 }
