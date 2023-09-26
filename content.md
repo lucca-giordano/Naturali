@@ -2,37 +2,37 @@
 
 ## Categorias:
 
-- Moda
-    - Ecobags
-    - Produtos sustentáveis
-    - Moda Masculina
-    - Moda Feminina
-    - Moda Infantil
-    - Acessórios
+- [Moda](#moda)
+    - [Ecobags](#ecobags)
+    - [Produtos sustentáveis](#produtos-sustentáveis)
+    - [Moda Masculina](#moda-masculina)
+    - [Moda Feminina](#moda-feminina)
+    - [Moda Infantil](#moda-infantil)
+    - [Acessórios](#acessórios)
 
-- Alimentação
-    - Oleaginosas
-    - Cereais
-    - Chás
-    - Bebidas prontas
-    - Óleos
-    - Temperos
+- [Alimentação](#alimentação)
+    - [Oleaginosas](#oleaginosas)
+    - [Cereais](#cereais)
+    - [Chás](#chás)
+    - [Bebidas prontas](#bebidas-prontas)
+    - [Óleos](#óleos)
+    - [Temperos](#temperos)
 
-- Saúde
-    - Suplementos
-    - Vitaminas
+- [Saúde](#saúde)
+    - [Suplementos](#suplementos)
+    - [Vitaminas](#vitaminas)
 
-- Produtos de beleza
-    - Cuidados faciais
-    - Cuidados corporais
-    - Cuidados capilares
+- [Produtos de beleza](#produtos-de-beleza)
+    - [Cuidados faciais](#cuidados-faciais)
+    - [Cuidados corporais](#cuidados-corporais)
+    - [Cuidados capilares](#cuidados-capilares)
 
-- Conteúdo textual:
-    - Blog Naturali
-    - Compromisso com a sustentabilidade
-    - Quem somos
-    - Nossa história
-    - Certificado Naturali
+- [Conteúdo textual:](#conteúdo-textual)
+    - [Blog Naturali](#blog-naturali)
+    - [Compromisso com a sustentabilidade](#compromisso-com-a-sustentabilidade)
+    - [Quem somos](#quem-somos)
+    - [Nossa história](#nossa-história)
+    - [Certificado Naturali](#certificado-naturali)
 
 ---
 
