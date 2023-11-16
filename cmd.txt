@@ -1,0 +1,7 @@
+https://www.youtube.com/results?search_query=react+and+node+app+in+google+cloud
+
+npm create vite@latest
+
+cd client
+npm install
+npm run dev

@@ -1,0 +1,111 @@
+/* RegisterPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Inter:wght@100;200;300;400;500;600;800&family=Mooli&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bricolage Grotesque', sans-serif; /* Substitua "Inter" pelo nome real da fonte que você escolheu */
+}
+
+.register-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(C:\Projetos\Naturali\frontend\client\src\assets\img\ReceptionImage.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.left-section img {
+  width: 80%;
+  height: auto;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: #50B96F;
+  margin-bottom: 0px;
+  font-size: 64px;
+}
+
+h3{
+  font-size: 48px;
+  color: #50B96F;
+  margin-top: 0;
+}
+
+form {
+  width: 100%; /* Agora o formulário ocupa toda a largura */
+  max-width: 400px;
+}
+
+input {
+  width: 400px;
+  height: 40px; 
+  padding: 6px;
+  margin-bottom: 16px;
+  border: 3px solid #50B96F;
+  background-color: white; /* Fundo dos inputs */
+  border-radius: 8px; /* Borda arredondada */
+  font-family: 'Bricolage Grotesque', sans-serif; /* Substitua "Inter" pelo nome real da fonte que você escolheu */
+  color: #000;
+}
+
+/* Aplicar a mesma fonte para o placeholder */
+input::placeholder {
+  font-family: 'Bricolage Grotesque', sans-serif; /* Substitua "Inter" pelo nome real da fonte que você escolheu */
+  font-size: 18px;
+}
+
+
+button {
+  background-color: white;
+  width: 150px;
+  color: #000; /* Texto preto */
+  padding: 10px;
+  cursor: pointer;
+  border: 3px solid #50B96F;
+  border-radius: 8px; /* Borda arredondada */
+  transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Estilo quando o mouse está sobre o botão */
+button:hover {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #50B96F; /* Verde */
+  color: white; /* Texto branco */
+}
+
+/* Estilo quando o botão não está em foco e não está sendo sobrevoado */
+button:not(:hover) {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: white; /* Branco */
+  color: #000; /* Texto preto */
+  border-color: #50B96F; /* Cor da borda verde */
+}
+
+p {
+  margin-top: 16px;
+  color: #50B96F;
+}
