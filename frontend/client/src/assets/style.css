@@ -1,11 +1,17 @@
+/**Estilos para todo o projeto*/
+/*Para visualizar os comentários da maneira entendida, instale a Better Comments no vscode: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments*/
+
 /*style.css*/
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Inter:wght@100;200;300;400;500;600;800&family=Mooli&display=swap');
 
 body {
   margin: 0;
   font-family: 'Bricolage Grotesque', sans-serif; /* Substitua "Inter" pelo nome real da fonte que você escolheu */
+  background-color: white;
 }
 
+
+/**Estilos para página de login e registro (muito parecidas para separa-las em duas coisas diferentes)*/
 .register-container {
   display: flex;
   height: 100vh;
@@ -55,24 +61,24 @@ body {
   align-items: center;
 }
 
-h2 {
+.right-section h2 {
   color: #50B96F;
   margin-bottom: 0px;
   font-size: 64px;
 }
 
-h3{
+.right-section h3{
   font-size: 48px;
   color: #50B96F;
   margin-top: 0;
 }
 
-form {
+.right-section form {
   width: 100%; /* Agora o formulário ocupa toda a largura */
   max-width: 400px;
 }
 
-input {
+.right-section input {
   width: 400px;
   height: 40px; 
   padding: 6px;
@@ -85,7 +91,7 @@ input {
 }
 
 /* Aplicar a mesma fonte para o placeholder */
-input::placeholder {
+.right-section input::placeholder {
   font-family: 'Bricolage Grotesque', sans-serif; /* Substitua "Inter" pelo nome real da fonte que você escolheu */
   font-size: 18px;
 }
@@ -94,7 +100,12 @@ input::placeholder {
   display: flex;
 }
 
-button {
+.error-message{
+  color:red;
+  display: block;
+}
+
+.right-section button {
   background-color: white;
   width: 150px;
   height: 49px;
@@ -108,7 +119,7 @@ button {
 }
 
 /* Estilo quando o mouse está sobre o botão */
-button:hover {
+.right-section button:hover {
   transition: background-color 0.3s, color 0.3s;
   background-color: #50B96F; /* Verde */
   color: white; /* Texto branco */
@@ -117,25 +128,362 @@ button:hover {
 }
 
 /* Estilo quando o botão não está em foco e não está sendo sobrevoado */
-button:not(:hover) {
+.right-section button:not(:hover) {
   transition: background-color 0.3s, color 0.3s;
   background-color: white; /* Branco */
   color: #000; /* Texto preto */
   border: 3px solid #50B96F;
 }
 
-p {
+.right-section p {
   margin-top: 16px;
   color: #50B96F;
 }
 
-@media screen and (max-width: 1340px) {
+/**Estilos para a Header*/
+.navbar-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000; 
+  
+}
+
+.header-logo{
+  display: flex;
+}
+
+.header-logo-img{
+  width: 80px;
+  height: 80px;
+  margin-top: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-logo-h1{
+  color: #000;
+}
+
+.header-itens{
+  display: flex;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  border-radius: 9px;
+}
+
+.dropdown:hover{
+  background-color: #50B96F;
+}
+
+.dropdown-title{
+  color: #000;
+  padding: 27px 6px;
+  font-size: 24px;
+  transition: 0.3ms;
+
+}
+
+.dropdown-title:hover{
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: 0.3ms;
+}
+
+.dropdown-list{
+  display: none;
+  position: absolute;
+  background-color: #50B96F;
+  padding: 15px;
+  min-width: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  margin-top: 1px;
+  text-decoration: none;
+  transition: 0.3ms;
+}
+
+.dropdown-title:hover + .dropdown-list, .dropdown-list:hover, .dropdown:hover{
+  display: block;
+  transition: 0.3ms;
+}
+
+.dropdown-item{
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.dropdown-item:hover{
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-link{
+  text-decoration: none;
+  color: white;
+  padding: 27px;
+  font-size: 24px;
+}
+
+.header-link-item{
+  text-decoration: none;
+  color: #000;
+  padding: 27px 10px;
+  font-size: 24px;
+}
+
+.header-link-item:hover{
+  background-color: #50B96F;
+  border-radius: 9px;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/**Estilos para o conteúdo estático*/
+
+.static-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  background-color: white;
+}
+
+.static-container-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.static-content-item-title{
+  font-size: 48px;
+  color: #50B96F;
+  margin-bottom: 0px;
+}
+
+.static-item-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.static-item-p{
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0px;
+}
+
+/**Estilos para página do blog*/
+
+.content-container{
+  padding-top: 250px;
+}
+
+/**Estilos para a página de postagem*/
+
+.post-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Isso aqui é pra garantir que o container pai ocupe a altura toda da tela */
+  width: 100vw
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  min-height: 100vh;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  box-sizing: border-box;
+  margin: auto; /* Adicionei a propriedade margin: auto para centralizar o formulário na tela */
+}
+
+.input-container {
+  width: 100%;
+}
+
+.input-container input {
+  width: calc(100% - 16px);
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 3px solid #50B96F;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #000;
+}
+
+.input-container textarea{
+  resize: none;
+  width: calc(100% - 16px);
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 3px solid #50B96F;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #000;
+}
+
+.input-container textarea::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 4px;
+}
+
+.input-container textarea::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.input-container textarea::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+}
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.post-container button {
+  margin: 10px;
+}
+
+/**Estilos para footer*/
+footer {
+  background-color: #50B96F; /* Cor de fundo do footer */
+  padding: 20px;
+}
+
+.footer-container{}
+
+.footer-content {
+  text-align: center; /* Alinhar o conteúdo do footer ao centro */
+  color: #ffffff;
+  text-decoration: none;
+ 
+}
+
+.footer-content a{
+  color: white;
+  transition: 0.3s;
+}
+.footer-content a:hover{
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  font-size: larger;
+  transition: 0.3s;
+}
+
+/* Estilos para os ícones sociais */
+.footer-social {
+  display: flex;
+  justify-content: center; /* Centralizar os ícones horizontalmente */
+  margin-top: 20px; /* Espaçamento acima dos ícones */
+}
+
+.social-icon-container {
+  margin: 0 10px; /* Espaçamento entre os ícones */
+  text-align: center; /* Alinhar os ícones ao centro */
+}
+
+.social-icon-img {
+  width: 40px; /* Largura do ícone */
+  height: 40px; /* Altura do ícone */
+  display: block; /* Garantir que o ícone fique numa linha separada */
+  transition: 0.3s;
+  
+}
+
+.social-icon-img:hover{
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.social-icon-text {
+  margin-top: 5px; /* Espaçamento entre o ícone e o texto */
+  font-size: 14px; /* Tamanho do texto */
+}
+
+/**Estilos para as postagens na pagina inicial*/
+
+.post-title-initial-page{
+  color: #000;
+}
+
+.post-subtitle-initial-page{
+  color: #000;
+}
+
+
+/**Responsividade das páginas*/
+
+@media screen and (max-width: 1420px) {
+
+  /**Responsividade da página de registro*/
+
   .register-container h2 {
     font-size: 48px; /* Altera o tamanho do h2 para o mesmo do h3 */
   }
 
   .register-container h3 {
+    font-size: 32px; /* Altera o tamanho do h3*/
+  }
+
+  /**Responsividade da página de login*/
+
+  .login-container h2 {
+    font-size: 48px; /* Altera o tamanho do h2 para o mesmo do h3 */
+  }
+
+  .login-container h3 {
     font-size: 32px; /* Altera o tamanho do h3 para 32px */
   }
+
+  /**Responsividade da página do blog*/
 }
 
