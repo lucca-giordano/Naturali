@@ -16,10 +16,12 @@ function BlogContent() {
   return (
     <div>
       {posts.map(post => ( // pra cada postagem, cria um elemento
-        <div key={post.id}>
-          <h2 className='post-title-initial-page'>{post.title}</h2>
-          <p className='post-subtitle-initial-page'>{post.subtitle}</p>
-          <Link to={`/pub/${post.idposts}`}>Ver postagem</Link>
+        <div className="post-container-initial-page">
+          <div key={post.id}>
+            <h2 className='post-title-initial-page'>{post.title}</h2>
+            <p className='post-subtitle-initial-page'>{post.subtitle}</p>
+            <Link className='link-post-initial-page' to={`/pub/${post.idposts}`}>Ver postagem</Link>
+          </div>
         </div>
       ))}
     </div>

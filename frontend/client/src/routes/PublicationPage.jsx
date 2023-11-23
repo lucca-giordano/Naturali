@@ -1,6 +1,8 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function PublicationPage() {
 
@@ -21,16 +23,27 @@ function PublicationPage() {
         <div className="error-container">
             <h2 className="error-code" style={{color: "#50B96F"}}>Erro 404</h2>
             <p className="error-message">Postagem não encontrada</p>
+            <Link to={'/'}><button className="error-page-voltar">Voltar</button></Link>
         </div>
     ); // mostra uma mensagem enquanto a postagem está sendo carregada
 
 
     return (
-        <div>
-        <h2 style={{color:"#000"}}>{post.title}</h2> {/* aqui você coloca o título */}
-        <h3 style={{color:"#000"}}>{post.subtitle}</h3> {/* aqui você coloca o subtítulo */}
-        <p style={{color:"#000"}}>{post.content}</p> {/* e aqui você coloca o conteúdo */}
+      <div className="publication-body">
+        <Header/>
+        <div className='publication-container'>
+        <h2 className='publication-title' style={{color:"#000"}}>{post.title}</h2> {/* aqui você coloca o título */}
+        <h3 className='publication-subtitle' style={{color:"#000"}}>{post.subtitle}</h3> {/* aqui você coloca o subtítulo */}
+        <p className='publication-content' style={{color:"#000"}}>{post.content.split('\n').map((line, i) => (
+          <React.Fragment key={i}>
+            {line}<br />
+          </React.Fragment>
+        ))}</p> {/* e aqui você coloca o conteúdo */}
       </div>
+      <Link to={'/'}><button className="publication-page-voltar">Voltar</button></Link>
+      <Footer/>
+      </div>
+
     )
 }
 

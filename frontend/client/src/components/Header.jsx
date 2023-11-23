@@ -25,7 +25,6 @@ function Header() {
                         </div>
                     </nav>
                     <div className="header-link">
-                        <Link className='header-link-item'><strong>Contato</strong></Link>
                         <Link className='header-link-item'><strong>Blog</strong></Link>
                         <Link className='header-link-item' to={'/post'}><strong>Publicar</strong></Link>
                     </div>

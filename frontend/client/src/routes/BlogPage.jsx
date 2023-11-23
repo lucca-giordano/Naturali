@@ -14,17 +14,19 @@ function BlogPage() {
   })
 
   return (
+    <div className="blog-body">
     <div className='blog-container'>
       <div className="header-container">
-        <Header />
+        <Header /> 
       </div>
       <div className="content-container">
         <BlogContent />
         <Home />
       </div>
-      <div className="footer-container">
+      <div className="footer-container-initial-page">
         <Footer />
       </div>
+    </div>
     </div>
   )
 }

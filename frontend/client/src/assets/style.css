@@ -258,6 +258,7 @@ body {
   margin-top: 200px;
   margin-bottom: 100px;
   background-color: white;
+  
 }
 
 .static-container-item{
@@ -294,8 +295,18 @@ body {
 
 /**Estilos para página do blog*/
 
+.blog-container{
+  width: 99.1vw;
+}
+
 .content-container{
   padding-top: 250px;
+  margin: auto;
+  width: 70%;
+}
+
+.footer-container{
+
 }
 
 /**Estilos para a página de postagem*/
@@ -398,7 +409,9 @@ footer {
   padding: 20px;
 }
 
-.footer-container{}
+.footer-container{
+  
+}
 
 .footer-content {
   text-align: center; /* Alinhar o conteúdo do footer ao centro */
@@ -451,6 +464,13 @@ footer {
 
 /**Estilos para as postagens na pagina inicial*/
 
+.post-container-initial-page{
+  border: #50B96F 3px solid;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
 .post-title-initial-page{
   color: #000;
 }
@@ -459,6 +479,70 @@ footer {
   color: #000;
 }
 
+.link-post-initial-page{
+  color: #50B96F;
+  transition: 0.3s;
+}
+
+.link-post-initial-page:hover{
+  color: #50B96F;
+  font-size: larger;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+/**Estilos para a página da publicação única*/
+.error-container{
+  /*Alinhas itens no centro da tela*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.error-code{
+
+}
+
+.error-page-voltar{
+  
+}
+
+.publication-body{
+
+}
+
+.publication-container{
+  margin-top: 300px;
+  padding-right: 500px;
+  padding-left: 300px;
+}
+
+.publication-title{
+
+}
+
+.publication-subtitle{
+
+}
+
+.publication-content{
+
+}
+
+.publication-page-voltar{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
 
 /**Responsividade das páginas*/
 
